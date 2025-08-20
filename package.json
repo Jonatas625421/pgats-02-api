@@ -1,0 +1,20 @@
+{
+  "name": "pgats-02-api",
+  "version": "1.0.0",
+  "description": "API REST para login, registro, consulta de usuários e transferências, com banco em memória e Swagger.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["express", "swagger", "api", "transferencia", "teste"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
