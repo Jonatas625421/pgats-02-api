@@ -5,7 +5,7 @@ const transferService = require('../service/transferService');
 
 router.post('/', (req, res) => {
   const { from, to, amount } = req.body;
-if (!from || !to || !amount) return res.status(404).json({ error: "Not Found - Usuário não encontrado"});
+if (!from || !to || !amount) return res.status(404).json({ error: "User not found."});
 try {
     const transfer = transferService.transfer({ from, to, amount });
     res.status(201).json(transfer);
